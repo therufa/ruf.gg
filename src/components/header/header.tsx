@@ -4,7 +4,7 @@ export default component$(() => {
   return (
     <header>
       <div class="logo">
-        <a href="https://ruf.gg" title="Ruf.gg">
+        <a href="/" title="Ruf.gg">
           Ruf.gg
         </a>
       </div>
