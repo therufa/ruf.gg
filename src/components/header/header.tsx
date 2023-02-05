@@ -13,6 +13,9 @@ export default component$(() => {
           <a href="/about/">
             About
           </a>
+          <a href="/star-wars">
+            Star Wars
+          </a>
         </li>
       </ul>
     </header>
