@@ -75,7 +75,7 @@ export const SuggestionsListComponent = (props: { state: IState }) => {
 };
 
 const getPeople = (searchInput: string, controller?: AbortController): Promise<string[]> =>
-  fetch(`http://localhost:5173/api/?name=${searchInput}`, {
+  fetch(`https://ruf.gg/api/?name=${searchInput}`, {
     signal: controller?.signal,
   })
     .then((response) => {
