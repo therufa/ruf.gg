@@ -19,7 +19,7 @@ type SwapiPeople = {
   url: string;
 };
 
-export const onGet: RequestHandler<SwapiPeople> = async ({ params, url }) => {
+export const onGet: RequestHandler<SwapiPeople> = async ({ params }) => {
   const { userId = '' } = params;
 
   const starwars = await fetch(`https://swapi.dev/api/people/${userId}`)
