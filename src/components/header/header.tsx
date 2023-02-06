@@ -1,11 +1,12 @@
 import { component$ } from '@builder.io/qwik';
+import Logo from '../logo';
 
 export default component$(() => {
   return (
     <header>
-      <div class="logo">
+      <div class="font-title">
         <a href="/" title="Ruf.gg">
-          Ruf.gg
+          <Logo />
         </a>
       </div>
       <ul>

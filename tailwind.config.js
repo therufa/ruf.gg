@@ -2,7 +2,11 @@
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        title: ['Teko', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 };
