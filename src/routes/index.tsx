@@ -7,7 +7,7 @@ export default component$(() => {
       <header>
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h1 class="text-3xl font-bold leading-tight tracking-tight text-gray-900">
-            Hey, SUP?!
+            Hey, Sup? I'm Max Ruf
           </h1>
         </div>
       </header>
@@ -20,11 +20,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Ruf.gg',
+  title: 'Attila Max Ruf - Full Stack Developer',
   meta: [
     {
       name: 'description',
-      content: 'Software Engineer, Developer by day, Software Developer and Engineer at night.',
+      content: 'Transform your projects with the help of a top-notch full-stack dev. Act now!',
     },
   ],
 };

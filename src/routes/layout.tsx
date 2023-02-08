@@ -57,7 +57,7 @@ export default component$(() => {
                 {/* <!-- Mobile menu button --> */}
                 <button
                   type="button"
-                  class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                  class="inline-flex items-center justify-center rounded-md bg-transparent p-2 text-gray-50 hover:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                   aria-controls="mobile-menu"
                   aria-expanded={store.navOpen ? 'true' : 'false'}
                   onClick$={() => store.navOpen = !store.navOpen}
@@ -71,7 +71,9 @@ export default component$(() => {
 
           {/* <!-- Mobile menu, show/hide based on menu state. --> */}
           <div class={['sm:hidden', store.navOpen ? 'block' : 'hidden']}  id="mobile-menu">
-            <div class="space-y-1 pt-2 pb-3">
+            <div class="space-y-1 pt-2 pb-3"
+              onClick$={() => store.navOpen = !store.navOpen}
+            >
               {navItems.map(item =>
                 <Link
                   key={item.href}
