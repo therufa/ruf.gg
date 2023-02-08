@@ -6,31 +6,30 @@ interface State {
   navOpen: boolean;
 }
 
+export const navItems = [
+  {
+    name: 'Home',
+    href: '/',
+  },
+  {
+    name: 'About',
+    href: '/about',
+  },
+  {
+    name: 'Blog',
+    href: '/blog',
+    classes: 'text-red-400',
+  },
+  {
+    name: '/uses',
+    href: '/uses',
+  },
+];
+
 export default component$(() => {
   const store = useStore<State>({
     navOpen: false,
   });
-
-  const navItems = [
-    {
-      name: 'Home',
-      href: '/',
-      classes: '',
-    },
-    {
-      name: 'About',
-      href: '/about',
-    },
-    {
-      name: 'Blog',
-      href: '/blog',
-      classes: 'text-red-400',
-    },
-    {
-      name: '/uses',
-      href: '/uses',
-    },
-  ];
 
   return (
     <>
