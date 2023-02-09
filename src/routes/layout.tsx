@@ -85,7 +85,9 @@ export default component$(() => {
         </nav>
 
         <div class="py-10">
-          <Slot />
+          <div class="mx-auto max-w-7xl container">
+            <Slot />
+          </div>
         </div>
       </div>
     </>
