@@ -7,14 +7,14 @@ export default component$(() => {
   return (
     <>
       <header class="mb-4">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto px-4 sm:px-6 lg:px-8">
           <h1 class="text-5xl font-bold leading-tight tracking-tight text-gray-700">
             About Me
           </h1>
         </div>
       </header>
       <main>
-        <article class="mx-auto max-w-7xl px-6 lg:px-8">
+        <article class="mx-auto px-6 lg:px-8">
           <p class="py-2">
             Hi, I'm Attila, and I'm a web developer.
           </p>
@@ -61,7 +61,7 @@ export default component$(() => {
             I'm also interested in:
           </p>
 
-          <ul class="list-disc list-inside list-">
+          <ul class="marker:text-purple-800 list-[square] list-inside">
             <li>Web Performance</li>
             <li>Programming languages</li>
             <li>Freelancing</li>
@@ -75,7 +75,7 @@ export default component$(() => {
             You can find me on:
           </p>
 
-          <ul class="list-disc list-inside list-">
+          <ul class="marker:text-purple-800 list-[square] list-inside">
             <li><a href="mailto:therufa@gmail.com" class="underline text-purple-900 hover:text-purple-700 transition-all">Email</a></li>
             <li><a href="https://twitter.com/therufa" class="underline text-purple-900 hover:text-purple-700 transition-all">Twitter</a></li>
             <li><a href="https://www.linkedin.com/in/attila-max-ruf-647659101/" class="underline text-purple-900 hover:text-purple-700 transition-all">LinkedIn</a></li>

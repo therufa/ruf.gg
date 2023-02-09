@@ -8,17 +8,8 @@ interface State {
 
 export const navItems = [
   {
-    name: 'Home',
-    href: '/',
-  },
-  {
     name: 'About',
     href: '/about',
-  },
-  {
-    name: 'Blog',
-    href: '/blog',
-    classes: 'text-red-400',
   },
   {
     name: '/uses',
@@ -35,11 +26,11 @@ export default component$(() => {
     <>
       <div class="min-h-full">
         <nav class="border-b border-gray-200 bg-purple-800">
-          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
             <div class="flex h-16 justify-between">
               <div class="flex justify-between flex-1">
                 <div class="flex flex-shrink-0 items-center">
-                  <Logo />
+                  <Link href='/'><Logo /></Link>
                 </div>
                 <div class="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
                   {navItems.map(item =>
@@ -85,7 +76,7 @@ export default component$(() => {
         </nav>
 
         <div class="py-10">
-          <div class="mx-auto max-w-7xl container">
+          <div class="mx-auto max-w-3xl container">
             <Slot />
           </div>
         </div>
